@@ -49,11 +49,25 @@ defined('BASEPATH') or exit('No direct script access allowed');
 | Examples:	my-controller/index	-> my_controller/index
 |		my-controller/my-method	-> my_controller/my_method
 */
+$route['default_controller'] = 'Login/index';
 
-// HALAMAN LOGIN & REGISTER
-$route['default_controller'] = 'login';
-$route['register'] = 'login/register';
-$route['forgot-password'] = 'login/forgot';
+// Route Untuk Form Login dan Proses Login
+$route['login'] = 'Login/index';
+
+// Route Untuk Form Lupa Password
+$route['forgotPassword'] = 'Login/forgotPassword';
+$route['login/resetpassword'] = 'Login/resetPassword';
+$route['passwordBaru'] = 'Login/changePassword';
+
+// Route Untuk Form Pendaftaran
+$route['pendaftaran'] = 'Login/registration';
+
+// Route Untuk Keluar dari sistem
+$route['logout'] = 'Login/logout';
+
+$route['user'] = 'User/index';
+
+
 
 
 $route['404_override'] = '';
