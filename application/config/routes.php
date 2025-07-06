@@ -67,8 +67,12 @@ $route['logout'] = 'Login/logout';
 
 $route['user'] = 'User/index';
 
-
-
+$route['user/hapus/(:num)'] = 'User/hapus/(:num)';
+$route['user/editData/(:num)'] = 'User/editData/(:num)';
+$route['user/editDataGo'] = 'User/editDataGo';
+$route['user/uploadFoto/(:num)'] = 'User/uploadFoto/(:num)';
+$route['user/uploadGo'] = 'User/uploadGo';
+$route['user/detailData/(:num)'] = 'User/detailData/(:num)';
 
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
